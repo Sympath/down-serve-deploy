@@ -8,5 +8,6 @@
 
 ```
 git clone git@github.com:Sympath/down-serve-deploy.git
-cd down-serve-deploy && nohup ./init.sh &
+cd down-serve-deploy
+sudo chmod 777 init.sh && nohup sh ./init.sh &
 ```
