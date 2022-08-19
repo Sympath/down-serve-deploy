@@ -17,7 +17,11 @@ make && make install
 echo "export PATH=$PATH:/usr/local/ffmpeg/bin" >> /etc/profile
 source /etc/profile
 #  3. 下拉 kkb-down-serve 仓库、安装依赖并 pm2 启动
+cd ../down-serve-deploy
 git clone git@github.com:Sympath/download-serve.git
 cd download-serve
 npm install
-npm run prd
+pm2 delete down-serve
+pm2 start bin/www --name down-serve
+# 成功后展示pm2应用列表
+pm2 list

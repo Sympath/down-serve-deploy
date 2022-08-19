@@ -11,3 +11,9 @@ git clone git@github.com:Sympath/down-serve-deploy.git
 cd down-serve-deploy
 sudo chmod 777 init.sh && nohup sh ./init.sh &
 ```
+
+查看日志
+
+```
+cat down-serve-deploy/nohup.out
+```
