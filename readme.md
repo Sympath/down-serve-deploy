@@ -10,6 +10,9 @@
 
 1. 安装 linux 百度云盘（这个需要获取授权码，所以没法自动化）：sudo chmod 777 ./ && nohup sh ./bypy-install.sh
    （：安装完成后会输出一个地址，访问输出的的地址获取授权码，输入授权码进行验证即可
+
+![20220819165228](https://raw.githubusercontent.com/Sympath/imgs/main/20220819165228.png)
+
 2. 执行核心脚本：nohup sh ./init.sh
 
 ## 常用命令
