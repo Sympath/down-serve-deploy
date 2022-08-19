@@ -6,14 +6,40 @@
 1. 在服务器上下拉对应仓库
 2. 执行初始化脚本进行搭建
 
+## 常用命令
+
+仓库使用
+
 ```
 git clone git@github.com:Sympath/down-serve-deploy.git
+```
+
+切换进目录
+
+```
 cd down-serve-deploy
-sudo chmod 777 init.sh && nohup sh ./init.sh &
+```
+
+执行脚本
+
+```
+rm -rf nohup.out && sudo chmod 777 init.sh && nohup sh ./init.sh &
 ```
 
 查看日志
 
 ```
 cat down-serve-deploy/nohup.out
+```
+
+查看同名进程
+
+```
+ps -ef | grep init.sh | grep -v grep
+```
+
+批量杀死同名进程
+
+```
+ps -ef | grep init.sh | grep -v grep | awk '{print "kill "$2}' | sh
 ```
