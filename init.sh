@@ -15,7 +15,7 @@ cd ffmpeg-3.1
 make && make install
 #  2.2 添加环境变量
 echo "export PATH=$PATH:/usr/local/ffmpeg/bin" >> /etc/profile
-source /ect/profile 
+source /etc/profile
 #  3. 下拉 kkb-down-serve 仓库、安装依赖并 pm2 启动
 git clone git@github.com:Sympath/download-serve.git
 cd download-serve
