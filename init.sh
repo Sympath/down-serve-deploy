@@ -1,7 +1,6 @@
 #!/usr/bin
 #  1. 配置 基础前端环境 git|node|pm2 环境
-#  1.1 安装nvm
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+#  1.1 安装nvm 参考nvm-install.sh脚本
 #  1.2 安装node
 nvm use stable
 #  1.3 安装pm2
