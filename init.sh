@@ -17,7 +17,7 @@ rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.
 yum install ffmpeg ffmpeg-devel
 # 验证
 ffmpeg -version
-#  3. 下拉 kkb-down-serve 仓库、安装依赖并 pm2 启动
+#  4. 下拉 kkb-down-serve 仓库、安装依赖并 pm2 启动
 cd ../down-serve-deploy
 git clone git@github.com:Sympath/download-serve.git
 cd download-serve
