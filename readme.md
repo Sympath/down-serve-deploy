@@ -23,13 +23,14 @@ cd down-serve-deploy
 执行脚本
 
 ```
-rm -rf nohup.out && sudo chmod 777 init.sh && nohup sh ./init.sh &
+rm -rf nohup.out && chmod +x ./init.sh && nohup sh ./init.sh &
 ```
 
 查看日志
 
 ```
-cat down-serve-deploy/nohup.out
+cd down-serve-deploy/download-serve/all-kkb/baoshi/ && cat all.log
+cat all_err.log
 ```
 
 查看同名进程
