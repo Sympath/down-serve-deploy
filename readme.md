@@ -40,6 +40,7 @@ rm -rf nohup.out && chmod +x ./init.sh && nohup sh ./init.sh &
 ```
 cd down-serve-deploy/download-serve/all-kkb/baoshi/ && cat all.log
 cat all_err.log
+cd down-serve-deploy/download-serve/all-kkb/baoshi/repo && cat download.log
 ```
 
 查看同名进程
