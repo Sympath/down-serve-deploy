@@ -32,6 +32,10 @@ cd down-serve-deploy
 执行脚本
 
 ```
+chmod +x ./nvm-install.sh && nohup sh ./nvm-install.sh &
+```
+
+```
 rm -rf nohup.out && chmod +x ./init.sh && nohup sh ./init.sh &
 ```
 
