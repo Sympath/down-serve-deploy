@@ -8,7 +8,8 @@ nvm use stable
 npm install pm2 -g
 #  2. 搭建 kkb-down-core 运行环境：ffmpeg 安装
 # 参考技术文章 https://cloud.tencent.com/developer/article/1985211
-# 先安装epel-release
+# 更新系统软件包
+yum update -y
 # https://blog.csdn.net/weixin_41831919/article/details/109035936（：EPEL (Extra Packages for Enterprise Linux)是基于Fedora的一个项目，为“红帽系”的操作系统提供额外的软件包，适用于RHEL、CentOS和Scientific Linux.
 yum install epel-release
 # 安装nux存储库
